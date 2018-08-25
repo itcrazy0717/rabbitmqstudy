@@ -30,7 +30,6 @@ public class Send {
         //发送消息
         channel.basicPublish("", QUEUE_NAME, null, msg.getBytes());
 
-
         System.out.println("send msg:" + msg);
 
         channel.close();
