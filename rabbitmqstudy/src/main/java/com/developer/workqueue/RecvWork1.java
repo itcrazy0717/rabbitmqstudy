@@ -52,6 +52,7 @@ public class RecvWork1 {
         };
 
         //这里采用自动ack，采用的是轮询分发的方式
+        //采用自动回执时，只要消息给到消费者后，该条消息就会从内存中删掉
         channel.basicConsume(QUEUE_NAME, true, consumer);
 
     }
