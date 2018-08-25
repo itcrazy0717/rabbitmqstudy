@@ -13,7 +13,7 @@ import com.rabbitmq.client.Envelope;
 /**
  * @author: developer
  * @date: 2018/8/25 15:37
- * @description:workqueue队列演示 --接收消息 轮询分发
+ * @description:workqueue队列演示 --接收消息 轮询分发，每个消费者获取的消息是相同的
  */
 
 public class RecvWork3 {
