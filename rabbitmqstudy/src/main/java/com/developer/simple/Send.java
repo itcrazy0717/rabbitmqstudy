@@ -7,7 +7,7 @@ import com.rabbitmq.client.Connection;
 /**
  * @author: developer
  * @date: 2018/8/25 14:29
- * @description: 发送mq数据
+ * @description: 发送mq数据 注意步骤
  */
 
 public class Send {
