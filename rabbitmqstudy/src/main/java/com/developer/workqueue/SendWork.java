@@ -22,6 +22,9 @@ public class SendWork {
         Channel channel = connection.createChannel();
 
         //创建队列声明
+        //当已经定义好队列时，再将durable修改成true是不行的，rabbitmq不允许重新定义已经
+        //存在的队列
+        //解决方式：从控制台将队列删掉，或者重新定义一个队列
         channel.queueDeclare(QUEUE_NAME, false, false, false, null);
 
 
